@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o",
+                "my_sdl_program",
+                "main.cpp",
+                "-I/opt/homebrew/opt/sdl2/include/sdl2",
+                "-L/opt/homebrew/opt/sdl2/lib",
+                "-lSDL2"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
